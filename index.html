@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Task Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Task Tracker</h1>
+            <p>Manage daily coding goals and coursework tasks</p>
+        </header>
+
+        <form id="task-form">
+            <input type="text" id="task-input" placeholder="Add a new task (e.g., Implement Linked List)..." required>
+            <button type="submit" id="add-btn">Add Task</button>
+        </form>
+
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="pending">Pending</button>
+            <button class="filter-btn" data-filter="completed">Completed</button>
+        </div>
+
+        <ul id="task-list"></ul>
+
+        <footer>
+            <span id="task-counter">0 tasks remaining</span>
+            <button id="clear-completed">Clear Completed</button>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
